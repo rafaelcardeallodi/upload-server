@@ -9,6 +9,7 @@ export const uploadImageRoute: FastifyPluginAsyncZod = async server => {
     '/uploads',
     {
       schema: {
+        tags: ['uploads'],
         summary: 'Upload an image',
         consumes: ['multipart/form-data'],
         response: {
