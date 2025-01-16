@@ -1,7 +1,6 @@
-import { beforeAll, describe, expect, it, vi } from 'vitest'
-
 import { randomUUID } from 'node:crypto'
-import { resolve } from 'node:path'
+import { describe, expect, it, vi } from 'vitest'
+
 import * as upload from '@/infra/storage/upload-file-to-storage'
 import { isRight, unwrapEither } from '@/shared/either'
 import { makeUpload } from '@/test/factories/make-upload'
